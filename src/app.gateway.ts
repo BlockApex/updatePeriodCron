@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Logger } from '@nestjs/common';
 import { SchedulerRegistry } from '@nestjs/schedule';
 import { SubscribeMessage, WebSocketGateway } from '@nestjs/websockets';
@@ -10,7 +11,7 @@ export class AppGateway {
 
   constructor(private schedulerRegistry: SchedulerRegistry, private readonly contractService: ContractService) {
     this.logger.verbose("initiated")
-    this.setupCronJob(1715180122)
+    this.setupCronJob(1715213179)
   }
 
   setupCronJob(unixTimestamp: number) {
