@@ -11,7 +11,7 @@ export class AppGateway {
 
   constructor(private schedulerRegistry: SchedulerRegistry, private readonly contractService: ContractService) {
     this.logger.verbose("initiated")
-    this.setupCronJob(1715213179)
+    this.setupCronJob(1715819331)
   }
 
   setupCronJob(unixTimestamp: number) {
